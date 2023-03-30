@@ -1,0 +1,17 @@
+
+
+<input type="text" [(ngModel)]="name"><br>
+<button (click)="save()">Save</button><br>
+<button (click)="call()">Show</button>
+<table style="border:dotted 2px">
+ <tr>
+    <th>Id</th>
+    <th>Name</th>
+    
+  </tr>
+  <tr *ngFor="let data of temp">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+  
+  </tr>
+  
